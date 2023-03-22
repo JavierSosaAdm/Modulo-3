@@ -2,20 +2,40 @@ const fs = require("fs");
 const utils = require("../utils/request");
 const process = require("process");
 
-function pwd() {}
+const pwd = (print, _args) => {
+    print(process.cwd())
+}
 
-function date() {}
+const date = (print, _args) => { // el _ es para iluminar el parámetro que no vamos a utilizar de momento
+    print(Date())
+}
 
-function echo() {}
+const echo = (print, args) => {
+    print(args)
+}
 
-function ls() {}
+const ls = (print, args) => {
+    fs.readdir('.', (error, files) => {
+        if (error) throw Error(error)
+        print(files.join(' '))
+    })
+}
 
-function cat() {}
+const cat = (print, args) => {}
 
-function head() {}
+const head = (print, args) => {}
 
-function tail() {}
+const tail = (print, args) => {}
 
-function curl() {}
+const curl = (print, args) => {}
 
-module.exports = {};
+module.exports = {
+    pwd,
+    date,
+    echo,
+    ls,
+    cat,
+    head,
+    tail,
+    curl
+};
