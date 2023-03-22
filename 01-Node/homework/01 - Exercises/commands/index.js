@@ -21,13 +21,42 @@ const ls = (print, args) => {
     })
 }
 
-const cat = (print, args) => {}
+// const printFile = (print, filename, lines) => {
+//     fs.readFile(filename, 'utf-8', (error, data) => {
+//         if (error) throw Error('Error en el contenido');
+//         !lines && print(data);
+//         lines === 'head' && print (data.split('\n').slice(0, 8).join('\n'));
+//         lines === 'tail' && print (data.split('\n').at(-1));
+//     } )
+// }
 
-const head = (print, args) => {}
+const cat = (print, args) => {
+    fs.readFile(args, 'utf-8', (error, data) => {
+        if (error) throw Error('Error en el contenido');
+        print(data)
+    })
+}
 
-const tail = (print, args) => {}
+const head = (print, args) => {
+    fs.readFile(args.join(''), 'utf-8', (error, data) =>{
+        if (error) throw Error('Error en el contenido');
+        print(data.split('\n').at(0).join(''));
+    })
+}
 
-const curl = (print, args) => {}
+const tail = (print, args) => {
+    fs.readFile(args.join(''), 'utf-8', (error, data) =>{
+        if (error) throw Error('Error en el contenido');
+        print(data.split('\n').at(-1));
+    })
+}
+    
+const curl = (print, args) => {
+    request(args, (error, response) => {
+        if (error) throw Error('Error en el contenido');
+        print(response)
+    })
+}
 
 module.exports = {
     pwd,
