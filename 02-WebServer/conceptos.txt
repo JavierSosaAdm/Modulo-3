@@ -1,0 +1,12 @@
+"WEB-SERVER": 
+    es cualquier computadora o sistema que procese solicitudes (request) y devuelva respuestas (response) a travez de un protocolo de red 
+cliente hace la solicitud => server opera el servicio y devolvera respuesta  
+
+"NETWORKS"
+    conjunto de computadoras que comparten recursos que provienen de distintos servidores
+"PROTOCOLOS"
+    reglas que permiten comunicacion 
+
+
+
+    DESCARGAR INSOMNIA
