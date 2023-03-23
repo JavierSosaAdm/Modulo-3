@@ -1,0 +1,8 @@
+promesa: representa el eventual resultado de una operacion asincrónica, las promesas son objetos que representan y gestionan el ciclo de vida de una respuesta futura, y tienen una prop "status" (pending[pendiente], fulfilled, rejected); 
+si da fulfilled me da el value (info) 
+si da rejected me da una razon por la cual no llego la data 
+
+information(value, reason); 
+ EL estado de las promesas, solo cambia una vez ya sea con un valor de resolución o un valor de rechazo luego de eso ejecuta los handlers (funciones) que establecen el plan de acción que están en el ".then()"
+
+ .then() grupo de manejadoress de la promesa, que recive 2 parametros (funciones), una en caso de que todo sale bien, y el segundo el error cuando todo sale mal (reason) que se ejecutan una vez que tenemos la respuesta de resolucion
