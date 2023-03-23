@@ -1,0 +1,32 @@
+JavaScript es de naturaleza es single y sincronico 
+
+NODE: 
+    Es un entorno de ejecución de JavaScript, es de naturaleza asincrónica, puesto que cuenta con "libuv" 
+
+"libuv": 
+- Es un paquete de módulos donde:
+1 Se lee y escribe archivos.
+2 Se lee y escribe base de datos. 
+3 Envia y recibe datos de internet. 
+4 Interpreta los formatos estandares. 
+5 Maneja procesos que llevan mucho tiempo.  
+
+MODULO: 
+        Es un bloque de código reutilizable, y su existencia no altera el funcionamiento de otros bloques de códico.
+Nodemon esta pendiente de todos los cambios en el proyecto lo que hace que todos los módulos conducen a index.js
+
+PAQUETES: 
+        Es cualquier módulo de código, manejado y contenido por un gestor de paquetes. 
+
+GESTOR DE PAQUETES: 
+        Es un software que automatiza la instalación y actualización de paquetes. Es un market de paquetes 
+
+"npm init": nos permitirá crear un archivo pacage.json para inicializar un proyecto. 
+
+"Smating Versioning": los paqutes tienen un código de creación de 3 dijitos los cuales indican 
+
+1.1."0": "Patch": cambia cuando Se arregla un detalle menor como un bug o error retro-compatible, es decir no cambia nada en cuanto al funcionamiento y comportamiento de la librería y módulo. 
+
+1."1".0: "Minor": Cambia cuando se agrega una nueva funcionalidad retro-compatible, ej: cuando se agrega un método que no existia. Es un cambio con lo anterior.
+
+"1".1.0: "Major": cambios no retro-compatibles cambios de versiones generales
