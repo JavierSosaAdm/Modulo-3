@@ -1,0 +1,3 @@
+.then(): metodo de promesa que maneja el resultado, solo maneja no tiene inferencia en al resolucion o rechazo de la promesa anterior
+
+.catch(): metodo de promesa que maneja el resultado peor que solo maneja errores

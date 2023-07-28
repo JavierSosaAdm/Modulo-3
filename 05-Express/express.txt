@@ -1,0 +1,25 @@
+EXPRESS: 
+Es un framework de back end, para construis una APIRest con Node.js, es un software con open source, flexible, minimalista y rapido
+
+primero se debe instalar npm install express --save (el "--save") no es obligaroio 
+
+documentacion: express.com
+
+ROUTING: estructura de la ruta:
+
+"server.get('/', (req, res, next) => {})"
+
+".get": Método "http" con el que se aplica el request.
+"path" ('/'): ruta en la que se aplica el request.
+"req": argumento http de request.
+"res": argumento http de response.
+"next": Argumento callback que apunta a un middleware
+() => {}: callback que se ejecuta cuando se llama a esta ruta
+
+express middlewares: 
+proceso previo de una http request antes de pasar a una hadler route que retorne la http response, el middleware es un intermediario que conecta a ambas partes 
+
+ENVIO DE INFO: 
+"params": se usa para info, unitaria y clasificatoria y se envia por parametro en la url.
+"query": envia poca cantidad de datos qeu sean informativos y son opcionales 
+"body": se envia a travez de los métodos "PUT", "POST" mediante als cuales se envian grandes cantidades de información como ser un formulario. 
