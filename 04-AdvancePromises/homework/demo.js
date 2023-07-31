@@ -53,7 +53,7 @@ promesa1
         (value) => 'te paso info', // esta promesa se resuelve al valor de 'te paso info'
         (error) => console.log(error)
         )  
-    .then((value) => console.log('este es el segundo then: ', value)) // esta promesa se resuelve al valor de 'te paso info' por el mismo motivo del caso anterior
+    .then((value) => console.log('este es el segundo then: ', value)) // esta promesa maneja y se resuelve al valor de 'te paso info' por el mismo motivo del caso anterior
 
 // la promesa se resuelve C
 promesa1
